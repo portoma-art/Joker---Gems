@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Support URL — Joker Gems</title>
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0d0814 0%, #160d29 100%);
+            --card-bg: rgba(28, 17, 51, 0.7);
+            --border-neon: rgba(236, 72, 153, 0.3);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --neon-pink: #ec4899;
+            --neon-purple: #a855f7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .navbar {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-neon);
+            padding: 10px;
+            border-radius: 30px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            margin-bottom: 35px;
+            box-shadow: 0 0 20px rgba(236, 72, 153, 0.15);
+        }
+
+        .navbar a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .navbar a.active, .navbar a:hover {
+            color: #ffffff;
+            background: linear-gradient(90deg, var(--neon-pink), var(--neon-purple));
+            box-shadow: 0 0 12px rgba(236, 72, 153, 0.6);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-neon);
+            border-radius: 24px;
+            padding: 35px 24px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .sub-heading {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 26px;
+        }
+
+        .mail-capsule {
+            background: rgba(13, 8, 20, 0.6);
+            border: 1px solid rgba(236, 72, 153, 0.15);
+            border-radius: 16px;
+            padding: 18px;
+            margin-bottom: 25px;
+        }
+
+        .mail-capsule span {
+            font-size: 12px;
+            color: var(--neon-pink);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .email-link {
+            font-size: 17px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 0.3px;
+            word-break: break-all;
+        }
+
+        .center-btn-wrap {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .trigger-mail-btn {
+            background: linear-gradient(90deg, var(--neon-pink), var(--neon-purple));
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 40px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .trigger-mail-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(236, 72, 153, 0.6);
+        }
+
+        .note-footer {
+            font-size: 11.5px;
+            color: var(--text-muted);
+            margin-top: 25px;
+            line-height: 1.5;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding-top: 40px;
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Profile</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="marketing.html">About App</a>
+        <a href="support.html" class="active">Support</a>
+    </nav>
+
+    <div class="container">
+        <h1>Customer Desk</h1>
+        <p class="sub-heading">
+            Experiencing graphics bugs, level issues, or have optimization suggestions for Joker Gems? Contact our tech desk.
+        </p>
+
+        <div class="mail-capsule">
+            <span>Official Inbox Node</span>
+            <div class="email-link">portoma@atomicmail.io</div>
+        </div>
+
+        <div class="center-btn-wrap">
+            <a href="mailto:portoma@atomicmail.io" class="trigger-mail-btn">Open Mail Support</a>
+        </div>
+        
+        <p class="note-footer">
+            Please declare your specific operating system build variation (iOS) to help reduce diagnosis time. Standard resolution queue delay is below 24 hours.
+        </p>
+    </div>
+
+    <footer class="footer">
+        &copy; 2026 Serhii Polovko.
+    </footer>
+
+</body>
+</html>
