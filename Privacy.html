@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Privacy Policy — Joker Gems</title>
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0d0814 0%, #160d29 100%);
+            --card-bg: rgba(28, 17, 51, 0.7);
+            --border-neon: rgba(236, 72, 153, 0.3);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --neon-pink: #ec4899;
+            --neon-purple: #a855f7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .navbar {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-neon);
+            padding: 10px;
+            border-radius: 30px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            margin-bottom: 35px;
+            box-shadow: 0 0 20px rgba(236, 72, 153, 0.15);
+        }
+
+        .navbar a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .navbar a.active, .navbar a:hover {
+            color: #ffffff;
+            background: linear-gradient(90deg, var(--neon-pink), var(--neon-purple));
+            box-shadow: 0 0 12px rgba(236, 72, 153, 0.6);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-neon);
+            border-radius: 24px;
+            padding: 35px 24px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .last-updated {
+            font-size: 12px;
+            color: var(--neon-pink);
+            font-weight: 600;
+        }
+
+        .scroll-box {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-muted);
+            max-height: 50vh;
+            overflow-y: auto;
+            padding-right: 6px;
+            margin-bottom: 25px;
+        }
+
+        .scroll-box::-webkit-scrollbar {
+            width: 4px;
+        }
+        .scroll-box::-webkit-scrollbar-thumb {
+            background: rgba(236, 72, 153, 0.3);
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-size: 15px;
+            color: #ffffff;
+            margin: 20px 0 8px 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        .btn-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .close-action-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-neon);
+            color: #ffffff;
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .close-action-btn:hover {
+            background: linear-gradient(90deg, #ff4a5a, var(--neon-pink));
+            border-color: #ff4a5a;
+            box-shadow: 0 0 15px rgba(255, 74, 90, 0.4);
+        }
+
+        .footer {
+            margin-top: auto;
+            padding-top: 40px;
+            font-size: 11px;
+            color: var(--text-muted);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" id="topNav">
+        <a href="index.html">Profile</a>
+        <a href="privacy.html" class="active">Privacy</a>
+        <a href="marketing.html">About App</a>
+        <a href="support.html">Support</a>
+    </nav>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>Privacy Policy</h1>
+            <div class="last-updated">Effective Date: May 2026</div>
+        </div>
+
+        <div class="scroll-box">
+            <p>This Privacy Document governs the operational architecture of <strong>Joker Gems</strong>, an interactive logic software utility constructed by <strong>Serhii Polovko</strong>.</p>
+
+            <h2>1. Definitive Data Commitment</h2>
+            <p>The core operating philosophy of Joker Gems relies on absolute user privacy. The application is engineered to perform entirely on-device. We do not gather, compile, store, monitor, or process any categories of your personal identity information, analytical metadata, or in-app usage sessions.</p>
+
+            <h2>2. Third-Party Restrictions</h2>
+            <p>Because zero information is gathered by the architecture, no metrics or parameters are ever shared, distributed, or commercialized with external entities, analytics institutions, or third-party advertising companies.</p>
+
+            <h2>3. Local Sandbox Storage</h2>
+            <p>Any settings or progress state modifications generated during gameplay loop interactions are managed directly inside the internal ecosystem of your hardware platform. This information remains completely private and unreachable to us.</p>
+
+            <h2>4. Policy Updates</h2>
+            <p>We maintain the authority to revise this regulatory overview as platform rules alter. We suggest periodic inspection of this text to maintain awareness regarding our data management standard.</p>
+
+            <h2>5. Communication Portal</h2>
+            <p>For administrative queries concerning this non-collection mandate, submit inquiries to our support node: <strong>portoma@atomicmail.io</strong>.</p>
+        </div>
+
+        <div class="btn-container">
+            <button class="close-action-btn" onclick="executeNativeDismiss()">Return to Game</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2026 Serhii Polovko.
+    </footer>
+
+    <script>
+        function checkWebViewContext() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            if (/iPhone|iPod|iPad/.test(ua) && !window.MSStream) {
+                if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.closeWebView) {
+                    document.getElementById('topNav').style.display = 'none';
+                }
+            }
+        }
+
+        function executeNativeDismiss() {
+            if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.closeWebView) {
+                window.webkit.messageHandlers.closeWebView.postMessage(null);
+            } else {
+                alert("Native action signal 'closeWebView' sent successfully.");
+            }
+        }
+
+        window.onload = checkWebViewContext;
+    </script>
+
+</body>
+</html>
