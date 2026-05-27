@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Serhii Polovko — Developer Profile</title>
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0d0814 0%, #160d29 100%);
+            --card-bg: rgba(28, 17, 51, 0.7);
+            --border-neon: rgba(236, 72, 153, 0.3);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --neon-pink: #ec4899;
+            --neon-purple: #a855f7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .navbar {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-neon);
+            padding: 10px;
+            border-radius: 30px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            margin-bottom: 35px;
+            box-shadow: 0 0 20px rgba(236, 72, 153, 0.15);
+        }
+
+        .navbar a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .navbar a.active, .navbar a:hover {
+            color: #ffffff;
+            background: linear-gradient(90deg, var(--neon-pink), var(--neon-purple));
+            box-shadow: 0 0 12px rgba(236, 72, 153, 0.6);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-neon);
+            border-radius: 24px;
+            padding: 35px 24px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .avatar-glow {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--neon-pink), var(--neon-purple));
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffffff;
+            box-shadow: 0 0 25px rgba(236, 72, 153, 0.5);
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .dev-title {
+            color: var(--neon-pink);
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 24px;
+        }
+
+        .description {
+            color: var(--text-muted);
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .app-showcase {
+            background: rgba(13, 8, 20, 0.5);
+            border: 1px solid rgba(236, 72, 153, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .app-icon {
+            width: 54px;
+            height: 54px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+        }
+
+        .app-meta {
+            text-align: left;
+        }
+
+        .app-meta h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 2px;
+        }
+
+        .app-meta p {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding-top: 40px;
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="active">Profile</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="marketing.html">About App</a>
+        <a href="support.html">Support</a>
+    </nav>
+
+    <div class="container">
+        <div class="avatar-glow">SP</div>
+        <h1>Serhii Polovko</h1>
+        <div class="dev-title">iOS Application Engineer</div>
+        
+        <p class="description">
+            Welcome to my developer web environment. I specialize in designing seamless, privacy-centric mobile applications that prioritize elegant user interfaces and rock-solid offline stability. Exploration and innovation define my development pipeline.
+        </p>
+
+        <div class="app-showcase">
+            <div class="app-icon">💎</div>
+            <div class="app-meta">
+                <h3>Joker Gems</h3>
+                <p>Premium Puzzle & Logic Entertainment</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2026 Serhii Polovko.
+    </footer>
+
+</body>
+</html>
